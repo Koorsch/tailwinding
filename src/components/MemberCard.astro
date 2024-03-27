@@ -1,0 +1,12 @@
+---
+import Avatar from "./Avatar.astro";
+import Button
+ from "./Button.astro";
+const {member} = Astro.props;
+---
+
+<li class="flex items-center justify-between py4">
+    <div class="flex items-center gap-4">
+        <Avatar {member.imgUrl} {member.name}>
+    </div>
+</li>
